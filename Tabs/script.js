@@ -7,7 +7,7 @@ const tabContents = document.querySelectorAll(".tab__content");
 tabsContainer.addEventListener("click", (e) => {
   const clicked = e.target;
 
-  if (e.target.classList.contains("tab")) {
+  if (clicked.classList.contains("tab")) {
     const dataTab = +clicked.dataset.tab;
     for (let i = 0; i < tabContents.length; i++) {
       tabContents[i].classList.add("hidden");
